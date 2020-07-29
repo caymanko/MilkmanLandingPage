@@ -1,98 +1,183 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize * */
+
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,900");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
-
 html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 body {
-  /* background: #0d1218 url("../img/ep_naturalblack.png"); */
-  font-size: 14px;
-  line-height: 1.6;
-  font-size: 14px;
-  color: black;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
+    /* background: #0d1218 url("../img/ep_naturalblack.png"); */
+    font-size: 14px;
+    line-height: 1.6;
+    font-size: 14px;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
 }
 
 .wrapper {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  /* background: red; */
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    /* background: red; */
 }
 
 section {
-  display: -webkit-box;
+    display: -webkit-box;
 }
 
-#header{
-  background:#E25F59;
-  background-size: cover;
-  height: 800px;
-  color: white;
-  text-align: center;
-  overflow: hidden;
-}
-#header h1{
- font-size: 60px;
- margin: 0;
- padding: 0;
- text-transform: uppercase;
-}
-#header img{
-  max-width: 500px;
-  width: 100%;
- }
-
-.main-nav{
-  list-style: none; 
-  display: flex;
-  margin-top: 20px; 
-  margin-bottom: 40px;
+#header {
+    background: #E25F59;
+    background-size: cover;
+    height: 800px;
+    color: white;
+    text-align: center;
+    overflow: hidden;
 }
 
-.main-nav li:first-child{
-  margin-right: auto;
+#header h1 {
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+
+#header img {
+    max-width: 500px;
+    width: 100%;
+}
+
+.main-nav {
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.main-nav li:first-child {
+    margin-right: auto;
 }
 
 .main-nav a {
-   color: white;
-   border-radius: 4px;
-   padding: 10px 50px;
-   text-decoration: none;
-   display: block;
-   font-weight: 900;
-   text-transform: uppercase;
- }
- .download{
-   background: white;
-   color: #E25F59;
- }
- a.download{
-  color: #E25F59;
-  box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2);
+    color: white;
+    border-radius: 4px;
+    padding: 10px 50px;
+    text-decoration: none;
+    display: block;
+    font-weight: 900;
+    text-transform: uppercase;
 }
 
-article{
-  width: 60%;
-  margin: 0 auto; }
+.download {
+    background: white;
+    color: #E25F59;
+}
+
+a.download {
+    color: #E25F59;
+    box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2);
+}
+
+article {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#brands ul {
+    margin: 0;
+    padding: 20px 0;
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+}
+
+#brands ul li {
+    list-style: none;
+}
+
+#brands ul li img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 550px) {
+    #brands ul {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+#features {
+    background: #f9f9f9;
+    text-align: center;
+    position: relative;
+    height: 500px;
+}
+
+#features::after {
+    bottom: 0;
+    position: absolute;
+    background: inherit;
+    content: " ";
+    height: 100%;
+    left: 0;
+    right: 0;
+    transform: skewY(-10deg);
+    transform-origin: 100%;
+    z-index: -1;
+}
+
+#features h2 {
+    font-size: 40px;
+    font-weight: 900;
+    margin: 80px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#features .cards {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 30px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px 40px 10px 40px;
+    box-shadow: 0 12px 10px -10px rgb(0, 0, 0, 0.2);
+}
+
+.feature-card h3 {
+    margin: 10px 0 0;
+    line-height: 0;
+}
+
+.device {
+    border-top: 3px solid #E25F59;
+}
+
+.car {
+    border-top: 3px solid #E25F59;
+}
+
+.door {
+    border-top: 3px solid #E25F59;
+}
