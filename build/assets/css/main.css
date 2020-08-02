@@ -394,7 +394,7 @@ article {
     }
 }
 
-@media only screen and (max-width:680px) {
+@media only screen and (max-width:900px) {
     .displayLayout img {
         /* height: 500px; */
         width: 100%;
@@ -404,7 +404,7 @@ article {
     }
 }
 
-@media only screen and (max-width:680px) {
+@media only screen and (max-width:900px) {
     .disText {
         width: 100%;
         text-align: center;
@@ -441,7 +441,7 @@ li.nav-toggle {
     display: flex;
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:900px) {
     a.logo {
         display: none;
     }

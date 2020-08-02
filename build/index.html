@@ -6,6 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://unpkg.com/scrollreveal@4"></script>
 </head>
 
 <body>
@@ -30,7 +31,7 @@
                 <h1>A modern Milkman.</h1>
                 <p>Woke up to find your roommate drank the last of your milk again? Milkman has you covered for all last-minute milk and breakfast needs, delivered right to your door.
                 </p>
-                <img src="assets/img/appiOS.png" alt="">
+                <img class="phone" src="assets/img/appiOS.png" alt="">
             </article>
         </div>
     </section>
@@ -76,7 +77,9 @@
     <section id="display">
         <div class="wrapper">
             <div class="displayLayout">
-                <img src="assets/img/app-mockup-screens-2-3.png" alt="Milkman Screens">
+                <picture>
+                    <img src="assets/img/app-mockup-screens-2-3.png" alt="Milkman Screens">
+                </picture>
                 <div class="disText">
                     <h2>Make things easy.</h2>
                     <p>Once the bottles have been used, just leave them outside your door and one of our delivery staff will collect them upon your next order.</p>
@@ -110,5 +113,53 @@
     </section>
 </body>
 <script src="assets/js/nav.js"></script>
+<script>
+    ScrollReveal().reveal('#header img.phone', {
+        delay: 200,
+        origin: 'bottom',
+        distance: '100px',
+
+    });
+
+    ScrollReveal().reveal('#features div.device', {
+        delay: 200,
+        duration: 300,
+        origin: 'bottom',
+        distance: '100px',
+
+    });
+
+    ScrollReveal().reveal('#features div.car', {
+        delay: 400,
+        duration: 300,
+        origin: 'bottom',
+        distance: '100px',
+
+    });
+
+    ScrollReveal().reveal('#features div.door', {
+        delay: 600,
+        duration: 300,
+        origin: 'bottom',
+        distance: '100px',
+
+    });
+
+    ScrollReveal().reveal('#display .disText', {
+        delay: 500,
+        duration: 500,
+        origin: 'right',
+        distance: '200px',
+
+    });
+
+    ScrollReveal().reveal('#display picture', {
+        delay: 500,
+        duration: 500,
+        origin: 'left',
+        distance: '200px',
+
+    });
+</script>
 
 </html>
