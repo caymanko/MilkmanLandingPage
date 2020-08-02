@@ -7,6 +7,8 @@ html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -101,6 +103,12 @@ section {
     display: block;
     font-weight: 900;
     text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.main-nav a:hover,
+a:active {
+    color: #E25F59;
 }
 
 .download {
@@ -185,8 +193,8 @@ article {
     background: white;
     padding: 30px 40px 10px 40px;
     box-shadow: 0 12px 10px -10px rgb(0, 0, 0, 0.2);
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    /* border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; */
 }
 
 .feature-card h3 {
@@ -271,7 +279,7 @@ article {
     background: url("../img/downloadBackground.jpg") no-repeat;
     background-size: cover;
     /* background: #e3b450; */
-    padding: 150px 0;
+    padding: 100px 0;
     margin-top: -45px;
 }
 
@@ -317,4 +325,28 @@ article {
     left: 20%;
     top: 14px;
     content: url(../img/playicon.png)
+}
+
+#footer {
+    text-align: center;
+    text-decoration: none;
+    padding: 60px 0;
+    font-weight: 400;
+}
+
+#footer li {
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+#footer a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: tomato;
+}
+
+#footer a:hover {
+    color: black;
 }
